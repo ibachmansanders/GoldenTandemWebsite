@@ -1,0 +1,39 @@
+div {
+    background-color: #f6eff7;
+    width: 100%;
+    margin: 0 auto;
+    }
+
+    div p{
+        color: #ece2f0;
+        font-size: 14px;
+    }
+
+    div h1 {
+        color: #ece2f0;
+            font-size: 30px;
+    }
+
+header {
+    text-align: center;
+}
+
+nav {
+    background-color: #02818a;
+    padding: 1%;
+}
+
+footer {
+    text-align: center;
+    background-color: #969696;
+    padding: 1%;
+}
+
+.main-header{
+    background-color: #3690c0;
+    padding: 2%;
+}
+
+.content p{
+    color:#212121;
+}
