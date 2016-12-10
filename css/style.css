@@ -2,6 +2,37 @@ html,body {
     height: 100px;
 }
 
+body {
+    position: relative; /*--for scrolling--*/
+}
+
+/*-- navbar --*/
+.navbar-default{
+    background:#fff;
+}
+
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: middle;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+.navbar .navbar-nav li a{
+    color: #000;
+    font-size: 30px;
+    vertical-align: 50%;
+}
+
+.navbar .navbar-nav li a img{
+    vertical-align: middle;
+    max-height: 50px;
+}
+
+/*--all this .affix bullshit shouldn't stay if it doesn't help with a transparent navbar --*/
 .affix {
   -webkit-transition:padding 0.2s ease-out;
   -moz-transition:padding 0.2s ease-out;  
@@ -30,6 +61,7 @@ html,body {
    box-shadow:initial;
 }
 
+/*--Header--*/
 header {
     background-image: url('../assets/impact.jpg');
     width: 100%;
@@ -46,9 +78,10 @@ header {
 
 header .header-content {
     position: relative;
+    top: 30vh;
     text-align: center;
     width: 100%;
-    opacity: 0.7;
+    opacity: 0.8;
 
 }
 
@@ -81,13 +114,17 @@ header .header-content h2 {
     padding: 3px 20px 3px 20px;
 }
 
+#portfolio {
+    
+}
+
 @media (min-width: 768px) {
     header{
         min-height: 100%;
     }
     header .header-content {
         position: relative;
-        top: 50%;
+        top: 30vh;
         max-width: 1000px;
         margin-left: auto;
         margin-right: auto;
@@ -146,21 +183,21 @@ header .header-content h2 {
 }
 
 .hovereffect:hover img {
-  opacity: 0.4;
+  opacity: 0.2;
   filter: alpha(opacity=40);
   -webkit-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
 }
 
 .hovereffect h2 {
-  text-transform: uppercase;
-  color: #fff;
-  text-align: center;
-  position: relative;
-  font-size: 17px;
-  overflow: hidden;
-  padding: 0.5em 0;
-  background-color: transparent;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 25px;
+    overflow: hidden;
+    padding: 0.5em 0;
+    background-color: transparent;
 }
 
 .hovereffect h2:after {
@@ -193,8 +230,16 @@ header .header-content h2 {
 }
 
 .hovereffect:hover a, .hovereffect:hover p {
-  opacity: 1;
-  filter: alpha(opacity=100);
-  -webkit-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/*--About Section--*/
+.smallHR {
+    max-width: 30vw;
+    margin-left: 0;
 }
