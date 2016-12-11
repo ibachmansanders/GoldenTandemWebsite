@@ -17,11 +17,20 @@
     </style>
 </head>
 <body>
+
 <div id='map'></div>
+
+
 <script>
 L.mapbox.accessToken = 'pk.eyJ1IjoiaWJhY2htYW5zYW5kZXJzIiwiYSI6ImNpc2dhMHVrcjAxcTQyeXZvZnBhZGU3YmoifQ.m7jyxFEjRPWo_P49zpn3FA';
 var map = L.mapbox.map('map', 'ibachmansanders.265942oh')
-    .setView([40, -74.50], 9);
+    .setView([48.8692, 2.3052], 15);
+    
+var popup = mapbox.Popup({closeOnClick: false})
+    .setLngLat([2.3052, 48.8692])
+    .setHTML('<p>I love when a map immediately gets me excited to <em>go</em> somewhere.  When I am lucky enough to face a long and unknown journey, it is the great emptiness inbetween places on maps and the possibilities of connecting my front door to some distant destination that drives me forward.  While I do not recommend this map for navigational reference, I do recommend it as imaginative fodder.</p>')
+    .addTo(map);
+    
 </script>
 </body>
 </html>

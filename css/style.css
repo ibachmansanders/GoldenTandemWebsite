@@ -32,35 +32,6 @@ body {
     max-height: 50px;
 }
 
-/*--all this .affix bullshit shouldn't stay if it doesn't help with a transparent navbar --*/
-.affix {
-  -webkit-transition:padding 0.2s ease-out;
-  -moz-transition:padding 0.2s ease-out;  
-  -o-transition:padding 0.2s ease-out;         
-  transition:padding 0.2s ease-out;
-
-}
-
-.affix-top {
-  /* navbar style at top */
-  background:transparent;
-  border-color:transparent;
-  padding: 15px;
-  -webkit-transition:all 0.5s ease;
-  -moz-transition:all 0.5s ease; 
-  -o-transition:all 0.5s ease;         
-  transition:all 0.5s ease;  
-}
-
-.affix-top .nav>li>a {
-   color: #000;
-}
-
-.affix-top .navbar-collapse {
-   border-color:transparent;
-   box-shadow:initial;
-}
-
 /*--Header--*/
 @media (min-width: 768px) {
     header{
@@ -180,7 +151,7 @@ header .header-content h2 {
   overflow: hidden;
   top: 0;
   left: 0;
-  padding: 50px 20px;
+  padding: 10px 20px;
 }
 
 .hovereffect img {
