@@ -7,6 +7,7 @@ body {
 }
 
 /*-- navbar --*/
+
 .navbar-default{
     background:#fff;
 }
@@ -119,6 +120,8 @@ header .header-content h2 {
     margin-top: 1%;
 }
 
+
+
 .doodle {
   overflow: hidden;
   position: relative;
@@ -128,9 +131,16 @@ header .header-content h2 {
 .doodle img {
   display: block;
   position: relative;
-  width: 100%;
+  width: 50%;
 
 }
+
+@media (min-width: @screen-md-min) {
+    .doodle img {
+        width: 100;
+    }
+}
+
 
 /*--hover effect code--*/
 .hovereffect {
@@ -151,6 +161,7 @@ header .header-content h2 {
   overflow: hidden;
   top: 0;
   left: 0;
+  padding: 0px 20px;
 }
 
 .hovereffect img {
@@ -178,7 +189,7 @@ header .header-content h2 {
     color: #fff;
     text-align: center;
     position: relative;
-    font-size: 25px;
+    font-size: 18px;
     overflow: hidden;
     padding: 0.5em 0;
     background-color: transparent;
@@ -225,12 +236,23 @@ header .header-content h2 {
 /*--About Section--*/
 .two-col-image {
     max-height: 35vh;
-    float:right;
 }
 
 #more-about-me {
     display: none;
 
+}
+
+#what-i-can-do {
+    display: none;
+}
+
+#work-ive-done {
+    display: none;
+}
+
+#curriculum-vitae {
+    display: none;
 }
 
 .smallHR {
@@ -249,5 +271,5 @@ header .header-content h2 {
 
 .footer .email {
     font-weight: bold;
-    color: #5bc0de;
+    color: #337ab7;
 }
